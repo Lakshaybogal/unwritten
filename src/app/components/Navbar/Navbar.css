@@ -1,4 +1,4 @@
-/* styles.css */
+
 .rainbow-text {
     background: linear-gradient(45deg, #1161c2, #00A7FF, #00CFFF, #00FFC7);
     -webkit-background-clip: text;
@@ -7,23 +7,15 @@
     background-size: 200% 200%;
   }
   
-  /* @keyframes rainbow {
-    0% {
-      background-position: 0% 50%;
-    }
-    100% {
-      background-position: 100% 50%;
-    }
-  } */
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    grid-template-rows: repeat(4, 1fr);    /* 4 rows */
-    gap: 20px; /* Adjust the gap between grid items as needed */
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(4, 1fr);   
+    gap: 20px; 
   }
   
   .blog-article {
-    border: 1px solid #ccc; /* Add a border or styling for the blog articles */
+    border: 1px solid #ccc; 
     padding: 10px;
   }
   
