@@ -32,10 +32,12 @@ const Carousel = () => {
                         current === index && (
                             <div key={image} className="slide flex justify-center">
                                 <img className='w-[70%] rounded-2xl' src={image} alt="images" />
+                               
                             </div>
                         )
                 )}
         </div>
+      
         <div className='right-arrow  bg-gray-200 hover:bg-gray-400 hover:text-white rounded-lg cursor-pointer'onClick={NextSlide}>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
