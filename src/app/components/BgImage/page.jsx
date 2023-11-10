@@ -1,6 +1,6 @@
 import React from 'react'
 
-const page = ({Component,pageProps}) => {
+const BgImage = () => {
   return (
     <div style={{
         backgroundImage: `url("image4.jpg")`,
@@ -8,9 +8,9 @@ const page = ({Component,pageProps}) => {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
     }}>
-        <Component {...pageProps} />
+       
     </div>
   )
 }
 
-export default page
+export default BgImage

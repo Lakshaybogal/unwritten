@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 
 import { faMagnifyingGlass, faUser } from "@fortawesome/free-solid-svg-icons";
+import BgImage from "@/components/BgImage/page";
 
 const page = () => {
   return (
@@ -19,12 +20,13 @@ const page = () => {
           </span>
           FILE
         </h1>
-        <Image
+        {/* <Image
           src="/profile.jpeg"
           width={200}
           height={200}
           className="mx-auto mt-10 shadow-"
-        ></Image>
+        ></Image> */}
+        <BgImage/>
 
         <h1 className="mx-auto text-3xl font-bold mt-5">
           I'm A Professional Dude
