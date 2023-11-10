@@ -1,4 +1,4 @@
-import HomePage from "./Pages/Home/page"
+import HomePage from "@/Home/page"
 import Footer from "./components/Footer/page"
 import Navbar from "./components/Navbar/Navbar.jsx"
 
