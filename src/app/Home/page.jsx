@@ -1,6 +1,6 @@
 "use client"
 import React from "react";
-import Carousel from "../../components/HomePage/Carousel";
+import Carousel from "@/components/HomePage/Carousel";
 import Card from "@/components/Card/page";
 import '@/utili/pages.css'
 
