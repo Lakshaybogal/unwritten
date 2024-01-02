@@ -2,3 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.blur_bg{
+    
+    filter: drop-shadow(5px 5px 89px  #1161c2);
+}
+

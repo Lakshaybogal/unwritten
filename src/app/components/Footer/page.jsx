@@ -1,40 +1,39 @@
-import Link from 'next/link'
-import React from 'react'
+import Link from 'next/link';
+import React from 'react';
 
 const Footer = () => {
     return (
-        <footer className='w-full border border-dark border-solid bg-blue-700 text-white'>
-            <div className='flex flex-row'>
-
-                <div className='flex flex-row items-center'>
-
-                    <ul className='flex flex-col items-center mt-6 pl-20 ml-20'>
-                        <li><h1 className='font-extrabold mb-3'>Quick Links</h1></li>
-                        <li><Link href="/">Home</Link></li>
-                        <li><Link href="/about">About</Link></li>
-                        <li><Link href="/contact">Contact</Link></li>
-                    </ul>
-
-                    <ul className='flex flex-col mt-6 items-center pl-10'>
-                        <li><h1 className='font-extrabold mb-3'>Site Map</h1></li>
-                        <li><Link href="/">Blogs</Link></li>
-                        <li><Link href="/about">Help</Link></li>
-                        <li><Link href="/contact">Terms</Link></li>
-                    </ul>
-
-                </div>
-                <div className='flex flex-col pl-[40%] pt-6'>
-                    <h1 className='font-extrabold'>Newsletter</h1>
-                    <div className='flex flex-row gap-6'>
-                        <input type="text" placeholder='Enter your email' className='font-light py-2 px-2 ' />
-                        <button className="py-2 px-4 bg-white text-black font-light rounded-lg cursor-pointer">Send</button>
+        <footer className='flex flex-col border border-dark w-full items-center  border-solid blur_bg text-blue-700 p-6 rounded'>
+            <div className='flex flex-row blur_bg  '>
+                <nav className='flex flex-col blur_bg items-start relative right-[60%]'>
+                    <div className='flex justify-center gap-2 text-xl'>
+                        <h1 className='font-extrabold'>Quick Links</h1>
+                        <Link href="/">Home</Link>
+                        <Link href="/about">About</Link>
+                        <Link href="/contact">Contact</Link>
                     </div>
+
+                    <div className='flex justify-center gap-2 text-xl'>
+                        <h1 className='font-extrabold'>Site Map</h1>
+                        <Link href="/">Blogs</Link>
+                        <Link href="/about">Help</Link>
+                        <Link href="/contact">Terms</Link>
+                    </div>
+     
+                </nav>
+
+                <div className='flex flex-col relative left-[60%]'>
+                    <h1 className='font-extrabold text-xl'>Newsletter</h1>
+                    <form className='flex flex-row gap-2'>
+                        <input type="email" placeholder='Enter your email' className='font-light rounded py-1 px-2 border-2 border-blue-700' />
+                        <button className="py-1 px-2 bg-blue-700 text-white font-light rounded cursor-pointer">Send</button>
+                    </form>
                 </div>
 
             </div>
-            <div className='flex items-center pl-[40%] pb-4 font-extralight text-sm'>{new Date().getFullYear()}&copy; All Rights Reserved.</div>
+            <div className='flex items-center font-extralight text-base blur_bg'>{new Date().getFullYear()}&copy; All Rights Reserved.</div>
         </footer>
-    )
-}
+    );
+};
 
-export default Footer
+export default Footer;

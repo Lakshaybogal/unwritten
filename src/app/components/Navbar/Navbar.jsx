@@ -4,25 +4,29 @@ import "./Navbar.css"
 
 const Navbar = () => {
   return (
-    <nav className='flex flex-row justify-between py-5'>
-      <h1 className='pl-10 font-extrabold text-3xl'>
+    <nav className='hidden md:flex flex-row justify-around items-center gap-[95%] '>
+      <h1 className='font-extrabold text-3xl'>
         <Link href={'/'} className='rainbow-text'>
-        Unwritten
+          Unwritten
         </Link>
       </h1>
-      <div className='pr-10 flex gap-7 font-semibold'>
-      <Link href={'/'}>
-      Home
-      </Link>
-      <Link href={'/About'}>
-      About
-      </Link>
-      <Link href={'/'}>
-      Contact
-      </Link>
-      Search
+      <div className='flex text-xl gap-7 font-semibold items-center'>
+        <input 
+        className=' rounded-[30px] py-1 px-5 border-gray-500 border-2'
+        type="text" 
+        placeholder='Search' />
+        <Link href={'/'}>
+          Home
+        </Link>
+        <Link href={'/About'}>
+          About
+        </Link>
+        <Link href={'/'}>
+          Contact
+        </Link>
+
       </div>
-      
+
     </nav>
 
   )
