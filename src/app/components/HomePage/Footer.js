@@ -1,8 +1,11 @@
 import Link from 'next/link'
 import React from 'react'
+
 // import Layout from './Layout'
 
 const Footer = () => {
+ 
+  
   return (
 <footer className='w-full border border-dark border-solid bg-blue-600 text-white  '>
     <div className='flex flex-row'>

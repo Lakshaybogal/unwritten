@@ -8,7 +8,6 @@ const BgImage = () => {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
     }}>
-       
     </div>
   )
 }

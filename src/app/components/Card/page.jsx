@@ -2,9 +2,11 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image';
+import { getPosts } from '../../../../lib/client';
 
 
 const Card = ({ image, link, title, context }) => {
+  
 
   return (
     <div className=' border-2 border-solid  border-#e0e0e0 rounded-lg flex flex-col p-2 h-72 w-56 gap-1'>

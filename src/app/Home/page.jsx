@@ -3,6 +3,7 @@ import Carousel from "@/components/HomePage/Carousel";
 import '@/utili/home.css';
 import Image from 'next/image';
 import Animation from '../components/Animations/HeroSection';
+import { getPosts } from "../../../lib/client";
 import {LuBrainCircuit} from "react-icons/lu";
 const Home = () => {
   const perks = [
@@ -78,7 +79,7 @@ const Home = () => {
                   width={100} height={100} 
                   alt='' />
                   </div>
-                  <p className=" text-lg font-medium p-2">
+                  <p className=" text-lg font-medium p-2 line-clamp-2">
                     {perk.desc}
                   </p>
                 </div>
@@ -87,6 +88,7 @@ const Home = () => {
           }
         </div>
       </section>
+     
       <Carousel />
 
     </>
