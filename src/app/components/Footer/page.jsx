@@ -4,6 +4,11 @@ import React from 'react';
 const Footer = () => {
     return (
         <footer className='flex flex-col border border-dark w-full items-center  border-solid blur_bg text-blue-700 p-6 rounded'>
+            <h1 className='font-extrabold text-3xl'>
+                <Link href={'/'} className='rainbow-text'>
+                    Unwritten
+                </Link>
+            </h1>
             <div className='flex flex-row blur_bg  '>
                 <nav className='flex flex-col blur_bg items-start relative right-[60%]'>
                     <div className='flex justify-center gap-2 text-xl'>
@@ -19,7 +24,7 @@ const Footer = () => {
                         <Link href="/about">Help</Link>
                         <Link href="/contact">Terms</Link>
                     </div>
-     
+
                 </nav>
 
                 <div className='flex flex-col relative left-[60%]'>
