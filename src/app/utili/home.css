@@ -1,0 +1,10 @@
+
+.hero_heading{
+    inline-size: 40rem;
+}
+
+@media (max-width: 640px){
+    .hero_heading{
+        inline-size : 20rem;
+    }
+}
