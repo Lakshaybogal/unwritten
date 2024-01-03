@@ -3,7 +3,6 @@ import Carousel from "@/components/HomePage/Carousel";
 import '@/utili/home.css';
 import Image from 'next/image';
 import Animation from '../components/Animations/HeroSection';
-import { getPosts } from "../../../lib/client";
 import {LuBrainCircuit} from "react-icons/lu";
 const Home = () => {
   const perks = [

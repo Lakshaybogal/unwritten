@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+
 const images = [
     "https://ecommerce-1-0-main-frontend.vercel.app/img/mainbanner1-1680x900.jpg",
     "https://ecommerce-1-0-main-frontend.vercel.app/img/mainbanner2-1680x900.jpg",
@@ -7,7 +8,9 @@ const images = [
     "https://ecommerce-1-0-main-frontend.vercel.app/img/mainbanner1-1680x900.jpg"
 ];
 
-const Carousel = () => {
+const Carousel = async() => {
+   
+
     const[current,SetCurrent]=useState(0);
     const NextSlide=()=>{
         SetCurrent(current=== images.length-1 ? 0:current+1);
@@ -27,6 +30,7 @@ const Carousel = () => {
 
         </div>
         <div className='image'>
+
         {images.map(
                     (image, index) =>
                         current === index && (
