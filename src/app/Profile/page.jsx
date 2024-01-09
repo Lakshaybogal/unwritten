@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "@/components/Navbar/Navbar";
+import Navbar from "@/components/Navbar/page";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import BgImage from "@/components/BgImage"
 import Image from "next/image";
@@ -26,7 +26,7 @@ const page = () => {
           height={200}
           className="mx-auto mt-10 shadow-"
         ></Image> */}
-        <BgImage/>
+        <BgImage />
 
         <h1 className="mx-auto text-3xl font-bold mt-5">
           I'm A Professional Dude

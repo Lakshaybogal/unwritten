@@ -1,38 +1,39 @@
-
-import React from 'react'
-import Link from 'next/link'
 import Image from 'next/image';
-import { getPosts } from '../../../../lib/client';
+import Link from 'next/link';
 
+const Card = ({ postData }) => {
+    const { author, publishedAt, title, body, categories, _id, image } = postData;
+    const body1 = body.split(" ").slice(0, 20).join(' ');
+   
+    return (
+        <Link href={`/Blog/${_id}`}>
+            <div className='flex flex-col w-[30vw] gap-1'>
+                <div className='flex h-[30vh] flex-col space-y-2 bg-blue-700 rounded overflow-hidden'>
+                    <Image
+                        src={image}
+                        layout='responsive'
+                        width={100}
+                        height={100}
+                        alt='Loading'
+                    />
+                </div>
+                    <h1 className='font-bold text-2xl py-2'>{title}</h1>
+                    <p className='font-semibold'>
+                        {author.name}, {new Date(publishedAt).toDateString()}
+                    </p>
+                <div>
+                    <p>{body1} more....</p>
+                </div>
+                <div className='flex'>
+                    {categories.map((category) => (
+                        <div key={category._id}>
+                            <span className='text-blue-600 p-1 font-bold'>{category.name}</span>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </Link>
+    );
+};
 
-const Card = ({ image, link, title, context }) => {
-  
-
-  return (
-    <div className=' border-2 border-solid  border-#e0e0e0 rounded-lg flex flex-col p-2 h-72 w-56 gap-1'>
-
-      <Image
-        src={`/${image}`}
-        alt="img"
-        layout="responsive"
-        width={208}
-        height={208}
-        className='rounded-lg'
-      />
-
-      <div className='pl-1'>
-        <h1 className=' text-base font-semibold'>{title}</h1>
-        <p className=' text-xs font-light'>{context}</p>
-
-      </div>
-      <Link
-        className='p-2 w-fit text-xs bg-blue-700 font-medium text-white rounded-lg'
-        href={`/Blog/${link}`}>
-        Read Me
-      </Link>
-
-    </div>
-  );
-}
-
-export default Card
+export default Card;

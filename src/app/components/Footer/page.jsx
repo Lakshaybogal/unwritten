@@ -4,7 +4,7 @@ import React from 'react';
 const Footer = () => {
     return (
         <footer className='flex flex-col border border-dark w-full items-center  border-solid blur_bg text-blue-700 p-6 rounded'>
-            <h1 className='font-extrabold text-3xl'>
+            <h1 className='font-extrabold text-3xl blur_bg'>
                 <Link href={'/'} className='rainbow-text'>
                     Unwritten
                 </Link>
