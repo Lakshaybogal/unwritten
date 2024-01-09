@@ -4,7 +4,7 @@ import "./Navbar.css"
 
 const Navbar = () => {
   return (
-    <nav className='hidden md:flex flex-row justify-around items-center gap-[95%] '>
+    <nav className='hidden md:flex flex-row justify-center items-center gap-[50vw]'>
       <h1 className='font-extrabold text-3xl'>
         <Link href={'/'} className='rainbow-text'>
           Unwritten
@@ -21,8 +21,8 @@ const Navbar = () => {
         <Link href={'/About'}>
           About
         </Link>
-        <Link href={'/'}>
-          Contact
+        <Link href={'/Blog'}>
+          Blog
         </Link>
 
       </div>
