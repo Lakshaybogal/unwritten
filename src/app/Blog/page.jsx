@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import { getPosts } from "../../../lib/client";
 import Card from '../components/Card/page';
@@ -26,8 +25,8 @@ const Blogs = async () => {
         </div>
       </section>
       <div className="flex flex-col">
-        <h2 className="text-xl font-bold p-2">Recommended</h2>
-        <div className="p-1 flex flex-row gap-1 justify-center ">
+        <h2 className="text-xl font-bold p-2">Blogs</h2>
+        <div className="p-1 flex flex-col md:flex-row gap-1 justify-center ">
           {cards.map((card) => (
             <div key={card._id}>
               <Card postData={card} />

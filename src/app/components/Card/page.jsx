@@ -7,8 +7,8 @@ const Card = ({ postData }) => {
    
     return (
         <Link href={`/Blog/${_id}`}>
-            <div className='flex flex-col w-[30vw] gap-1'>
-                <div className='flex h-[30vh] flex-col space-y-2 bg-blue-700 rounded overflow-hidden'>
+            <div className='flex flex-col md:w-[30vw] gap-1'>
+                <div className='flex h-[30vh] flex-col bg-blue-500 rounded overflow-hidden'>
                     <Image
                         src={image}
                         layout='responsive'
