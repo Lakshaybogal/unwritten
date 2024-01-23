@@ -65,6 +65,7 @@ const Home = () => {
               return (
                 <div
                   className="p-3"
+                  
                   key={perk.img}>
                   <div className="flex items-center gap-1 text-3xl font-semibold p-2">
                     <span>
